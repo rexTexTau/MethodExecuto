@@ -17,7 +17,7 @@ Before using this app against any assembly *ensure* its license allows you to
 
 USE AT YOUR OWN RISK
 
-The author is not responsible for any kind of useage by third parties of this application (as well as its derivatives), which entailed a violation of license agreements and copyrights of third-party software assemblies, as well as indirect and direct losses of third-party software copyright holders.
+The author is not responsible for any kind of usage by third parties of this application (as well as its derivatives), which causes violation of license agreements and/or copyrights of third-party software assemblies, as well as any indirect and/or direct losses of third-party software copyright holders.
 
 # Usage
 
