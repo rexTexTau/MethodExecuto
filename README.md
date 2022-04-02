@@ -1,5 +1,5 @@
 # MethodExecuto
-.Net Core console app to quickly execute a particular method of a particular assembly
+.Net Core console app to quickly execute a particular method of a particular type in a particular assembly
 
 This project has three primary purposes:
 
