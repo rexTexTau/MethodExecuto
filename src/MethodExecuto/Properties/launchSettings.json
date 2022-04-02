@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MethodExecuto": {
+      "commandName": "Project",
+      "commandLineArgs": "-help"
+    }
+  }
+}
