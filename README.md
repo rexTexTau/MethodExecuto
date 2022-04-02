@@ -21,4 +21,4 @@ The author is not responsible for any kind of useage by third parties of this ap
 
 # Usage
 
-Run "Method.Executo.exe -help" to get the most actual usage instructions.
+Run "MethodExecuto.exe -help" to get the most actual usage instructions.
