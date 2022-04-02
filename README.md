@@ -5,7 +5,7 @@ This project has three primary purposes:
 
 * To supersede multiple test console apps and [Explicit] unit-tests in your solution;
 * To explore .Net core assemblies without source code provided;
-* To consume .Net core asemmblies' particular method execution within your own app.
+* To consume .Net core assemblies' particular method execution within your own app.
 
 # Legal Notice
 
@@ -21,4 +21,4 @@ The author is not responsible for any kind of useage by third parties of this ap
 
 # Usage
 
-TODO
+Run "Method.Executo.exe -help" to get the most actual usage instructions.
