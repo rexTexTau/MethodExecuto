@@ -11,6 +11,7 @@ namespace rextextau.MethodExecuto
     using System.Linq;
     using System.Reflection;
     using Utility.CommandLine;
+    using rextextau.MethodExecuto.Core;
 
     /// <summary>
     /// Console app to quickly execute a particular method of a particular type in a particular assembly.
@@ -128,45 +129,28 @@ namespace rextextau.MethodExecuto
 
         private static void PrintMethodInvocationResult()
         {
-            var type = Loader.LoadType(GetAssemblyPath(), TypeName);
-            var methods = Loader.LoadMethods(type);
-            var candidateMethods = methods.Where(m => m.Name == MethodName).ToList();
-            object[] parameters = null;
-            MethodInfo method = null;
-            for (int i = 0; i < candidateMethods.Count; i++)
+            var result = Invoker.Invoke(GetAssemblyPath(), TypeName, MethodName, ParameterValues, WorkingDir);
+            string resultString;
+            try
             {
-                try
+                if (result is IConvertible)
                 {
-                    method = candidateMethods[i];
-                    parameters = Loader.ConvertParameters(method.GetParameters(), ParameterValues);
-                    break;
+                    resultString = (string)Convert.ChangeType(result, typeof(string));
                 }
-                catch (Exception)
+                else if (result == null)
                 {
-                    // if it's not the last method - ignore exception and continue trying
-                    // if last method does not fit - then rethrow the exception, no way:
-                    if (i == candidateMethods.Count - 1)
-                    {
-                        throw;
-                    }
+                    resultString = "NULL";
+                }
+                else
+                {
+                    resultString = result.ToString();
                 }
             }
-
-            object instance = null;
-            if (!method.IsStatic)
+            catch (Exception e)
             {
-                // trying to execute ctor with no parameters
-                ConstructorInfo ctor = type.GetConstructor(Type.EmptyTypes);
-                instance = ctor.Invoke(null);
+                resultString = "CANNOT CONVERT";
+                Debug.WriteLine($"Error while converting method invocation result to string: {e.Message}");
             }
-
-            var result = method.Invoke(instance, parameters);
-            string resultString = string.Empty;
-            if (result is IConvertible)
-            {
-                resultString = (string)Convert.ChangeType(result, typeof(string));
-            }
-            resultString = string.IsNullOrEmpty(resultString) ? "NULL" : resultString;
             Console.WriteLine(resultString);
         }
 
@@ -206,20 +190,6 @@ namespace rextextau.MethodExecuto
                     PrintMethods();
                     return;
                 }
-
-                // adding assemblies resolution from working dir too
-                AppDomain.CurrentDomain.AssemblyResolve += (object sender, ResolveEventArgs args) =>
-                {
-                    string assemblyPath = Path.Combine(WorkingDir, new AssemblyName(args.Name).Name + DLL_SUFFIX);
-                    try
-                    {
-                        return Assembly.LoadFrom(assemblyPath);
-                    }
-                    catch (Exception)
-                    {
-                        return null;
-                    }
-                };
 
                 PrintMethodInvocationResult();
             }

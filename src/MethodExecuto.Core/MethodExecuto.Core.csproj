@@ -1,14 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	<CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>
-	<AssemblyName>MethodExecuto</AssemblyName>
-	<RootNamespace>rextextau.MethodExecuto</RootNamespace>
-	<VersionPrefix>0.0.2</VersionPrefix>
+    <CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>   
+	<RootNamespace>rextextau.MethodExecuto.Core</RootNamespace>
   </PropertyGroup>
-
+	
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <OutputPath>..\..\bin\Debug\</OutputPath>
@@ -23,11 +20,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Utility.CommandLine.Arguments" Version="6.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MethodExecuto.Core\MethodExecuto.Core.csproj" />
   </ItemGroup>
 
 </Project>
