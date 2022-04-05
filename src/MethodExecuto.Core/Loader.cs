@@ -84,11 +84,13 @@ namespace rextextau.MethodExecuto.Core
 
             // first try to search by full name (w namespace)
             var t = types.FirstOrDefault(t => t.FullName == className);
+
             // then try to combine full name using assembly name
             if (t == null)
             {
                 t = types.FirstOrDefault(t => t.FullName == Path.GetFileNameWithoutExtension(assemblyFilePath) + '.' + className);
             }
+
             // and only then search by classname
             if (t == null)
             {
