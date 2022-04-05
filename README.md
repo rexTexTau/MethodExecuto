@@ -1,11 +1,11 @@
 # MethodExecuto
-.Net Core console app to quickly execute a particular method of a particular type in a particular assembly
+.Net 5 console app to quickly execute a particular method of a particular type in a particular assembly
 
 This project has three primary purposes:
 
 * To supersede multiple test console apps and [Explicit] unit-tests in your solution;
-* To explore .Net core assemblies without source code provided;
-* To consume .Net core assemblies' particular method execution within your own app.
+* To explore .Net 5 assemblies without source code provided;
+* To consume .Net 5 assemblies' particular method execution within your own app.
 
 # Usage
 
