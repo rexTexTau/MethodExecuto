@@ -6,7 +6,12 @@
 	<CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>
 	<AssemblyName>MethodExecuto</AssemblyName>
 	<RootNamespace>rextextau.MethodExecuto</RootNamespace>
-	<VersionPrefix>0.0.2</VersionPrefix>
+	<VersionPrefix>0.0.3</VersionPrefix>
+	<Copyright>Copyright (c) George Churochkin 2022</Copyright>
+	<PackageProjectUrl>https://github.com/rexTexTau/MethodExecuto</PackageProjectUrl>
+	<RepositoryType>Git</RepositoryType>
+	<RepositoryUrl>https://github.com/rexTexTau/MethodExecuto.git</RepositoryUrl>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -28,6 +33,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MethodExecuto.Core\MethodExecuto.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -3,7 +3,13 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>   
-	<RootNamespace>rextextau.MethodExecuto.Core</RootNamespace>
+	<RootNamespace>rextextau.MethodExecuto.Core</RootNamespace>   
+	<VersionPrefix>0.0.3</VersionPrefix>
+	<Copyright>Copyright (c) George Churochkin 2022</Copyright>   
+	<PackageProjectUrl>https://github.com/rexTexTau/MethodExecuto</PackageProjectUrl>   
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>   
+	<RepositoryUrl>https://github.com/rexTexTau/MethodExecuto.git</RepositoryUrl>   
+	<RepositoryType>Git</RepositoryType>
   </PropertyGroup>
 	
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -20,6 +26,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
