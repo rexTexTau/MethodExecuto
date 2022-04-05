@@ -4,8 +4,8 @@
 This project has three primary purposes:
 
 * To supersede multiple test console apps and [Explicit] unit-tests in your solution;
-* To explore .Net 5 assemblies without source code provided;
-* To consume .Net 5 assemblies' particular method execution within your own app.
+* To explore .Net assemblies without source code provided;
+* To consume .Net assemblies' particular method execution within your own app.
 
 # Usage
 
@@ -54,7 +54,6 @@ Raw output result will be returned (not converted to string).
 If target framework of the assembly you're exploring and/or consuming differs from the target framework of MethodExecuto (.Net 5 at the moment), you could get an empty types and/or methods list (altrough they do present in the assembly), and an attempt to call a particular method will fail.
 
 Recompile MethodExecuto using target framework of the assembly you're dealing with to avoid that behavior.
-
 
 # Legal Notice
 
