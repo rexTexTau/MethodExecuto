@@ -75,7 +75,7 @@ namespace rextextau.MethodExecuto.Core
                     instance = ctor.Invoke(null);
                 }
 
-                return method.Invoke(instance, parameters);
+                return method.Invoke(instance, typedParameters);
             }
             finally
             {
