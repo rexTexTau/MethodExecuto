@@ -19,6 +19,16 @@ namespace rextextau.MethodExecuto.Core
         private const string DLL_SUFFIX = ".dll";
 
         #endregion
+
+        /// <summary>
+        /// Method to run a particular method from a particular assembly
+        /// </summary>
+        /// <param name="assemblyPath">Fully qualified path to the assembly</param>
+        /// <param name="typeName">Name of the type to use</param>
+        /// <param name="methodName">Name of the method to execute</param>
+        /// <param name="parameters">String array of parameters. Elements will be converted to method's input parameter types, if needed. Order matters!</param>
+        /// <param name="additionalAssemblyResolveDir">If assembly has dependencies, you could specify additional dir to resolve dependencies from</param>
+        /// <returns>Method execution result</returns>
         public static object Invoke(string assemblyPath, string typeName, string methodName, string[] parameters, string additionalAssemblyResolveDir = null)
         {
             ResolveEventHandler resolveEventHandler = null;

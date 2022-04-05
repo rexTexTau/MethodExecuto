@@ -41,7 +41,7 @@ namespace rextextau.MethodExecuto
         [Argument('m', "method", "Specify the method name")]
         private static string MethodName { get; set; }
 
-        [Argument('p', "parameters", "Specify the parameters' values")]
+        [Argument('p', "parameter", "Specify the parameters' values")]
         private static string[] ParameterValues { get; set; }
 
         [Operands]
@@ -70,11 +70,13 @@ namespace rextextau.MethodExecuto
 
             Console.WriteLine(string.Empty);
             Console.WriteLine("If you don't specify the working directory, current directory will be used");
-            Console.WriteLine("If you don't specify the assembly name, all assemblies within current directory will be listed");
-            Console.WriteLine("If you don't specify the type name, all types within selected assembly will be listed");
-            Console.WriteLine("If you don't specify the method name, all methods within selected type will be listed");
-            Console.WriteLine("If method you've selected to call is not staic, parameterless ctor will be executed (if any)");
+            Console.WriteLine("If you don't specify the assembly name, all available assemblies within current directory will be listed");
+            Console.WriteLine("If you don't specify the type name, all types within the selected assembly will be listed");
+            Console.WriteLine("If you don't specify the method name, all methods within the selected type will be listed");
+            Console.WriteLine("If method you've selected to call is not staic, parameterless type ctor will be executed (if any)");
+            Console.WriteLine("If method's visibility is private, internal, protected or protected internal - it'll just be executed no matter what.");
             Console.WriteLine("Multiple parameters' values allowed, i.e. -p \"x\" -p \"2.22\" -p \"3\" will lead to call ('x', 2.22, 3)");
+            Console.WriteLine("If there are several methods with one name and different signatures, the method with the signature that fits most list of given parameters will be called.");
             Console.WriteLine(string.Empty);
             Console.WriteLine("}-=[ Have a nice day! Regards, rextextau ]=-{");
         }
