@@ -49,7 +49,7 @@ Raw output result will be returned (not converted to string).
 
 ## Beware of .Net version compatibility issues
 
-If target framework of the assembly you're exploring and/or consuming differs from the target framework of MethodExecuto (.Net 5 at the moment), you could get an empty types and/or methods list (althpugh they do present in the assembly), and an attempt to call a particular method will fail.
+If target framework of the assembly you're exploring and/or consuming differs from the target framework of MethodExecuto (.Net 5 at the moment), you could get an empty types and/or methods list (altrough they do present in the assembly), and an attempt to call a particular method will fail.
 
 Recompile MethodExecuto using target framework of the assembly you're dealing with to avoid that behavior.
 
