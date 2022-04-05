@@ -173,6 +173,11 @@ namespace rextextau.MethodExecuto
 
             try
             {
+                if (!AssemblyName.EndsWith(DLL_SUFFIX))
+                {
+                    AssemblyName += DLL_SUFFIX;
+                }
+
                 if (string.IsNullOrWhiteSpace(AssemblyName))
                 {
                     PrintAssemblies();
