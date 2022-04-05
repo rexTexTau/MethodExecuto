@@ -34,7 +34,7 @@ If there are several methods with one name and different signatures, the method 
 
 Run `MethodExecuto.exe -h` or `MethodExecuto.exe -help` to get the most actual command line usage instructions.
 
-This app uses wonderful [Utilty.CommandLine.Arguments](https://github.com/jpdillingham/Utility.CommandLine.Arguments) lib to deal with command line args, so i case of advanced command-line params related question refer to its [documentation](https://github.com/jpdillingham/Utility.CommandLine.Arguments)
+This app uses wonderful [Utilty.CommandLine.Arguments](https://github.com/jpdillingham/Utility.CommandLine.Arguments) lib to deal with command line args, so in case of advanced command-line params related issues or questions refer to its [documentation](https://github.com/jpdillingham/Utility.CommandLine.Arguments).
 
 ## From code
 
