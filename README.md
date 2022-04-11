@@ -12,7 +12,7 @@ This project has three primary purposes:
 ## From console
 
 ```
-MethodExecuto.exe -d C:\Path\Where\Assembli\Is\" -a Assembly.Name -t SomeType -m SomeMethod -p one -p 2.22 -p 3
+MethodExecuto.exe -d C:\Path\Where\Assembly\Is\" -a Assembly.Name -t SomeType -m SomeMethod -p one -p 2.22 -p 3
 ```
 - returns result (converted to a string) of calling `SomeMethod(one, 2.22, 3)` of type `SomeType` from assembly `Assembly.Name`.
 
