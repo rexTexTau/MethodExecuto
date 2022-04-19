@@ -5,7 +5,7 @@ This project has three primary purposes:
 
 * To supersede multiple test console apps and [Explicit] unit-tests in your solution;
 * To explore .Net assemblies without source code provided;
-* To consume .Net assemblies' particular method execution within your own app.
+* To consume .Net assemblies' particular methods within your own app.
 
 # Usage
 
