@@ -61,7 +61,7 @@ Before using this app against any assembly *ensure* its license allows you to
 * explore it (in all cases);
 * create derivative work (in case you're chaining assembly methods' calls in your software).
 
-# Discalimer
+# Disclaimer
 
 USE AT YOUR OWN RISK
 
