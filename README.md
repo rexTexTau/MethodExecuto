@@ -1,5 +1,5 @@
 # MethodExecuto
-.Net 5 console app to quickly execute a particular method of a particular type in a particular assembly
+.Net 6 console app to quickly execute a particular method of a particular type in a particular assembly
 
 This project has three primary purposes:
 
@@ -51,7 +51,7 @@ Raw output result will be returned (not converted to string).
 
 ## Beware of .Net version compatibility issues
 
-If target framework of the assembly you're exploring and/or consuming differs from the target framework of MethodExecuto (.Net 5 at the moment), you could get an empty types and/or methods list (altrough they do present in the assembly), and an attempt to call a particular method will fail.
+If target framework of the assembly you're exploring and/or consuming differs from the target framework of MethodExecuto (.Net 6 at the moment), you could get an empty types and/or methods list (altrough they do present in the assembly), and an attempt to call a particular method will fail.
 
 Recompile MethodExecuto using target framework of the assembly you're dealing with to avoid that behavior.
 
