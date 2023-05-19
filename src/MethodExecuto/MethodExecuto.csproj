@@ -7,7 +7,7 @@
 	<AssemblyName>MethodExecuto</AssemblyName>
 	<RootNamespace>rextextau.MethodExecuto</RootNamespace>
 	<VersionPrefix>0.0.3</VersionPrefix>
-	<Copyright>Copyright (c) George Churochkin 2022</Copyright>
+	<Copyright>Copyright (c) George Volsky 2022</Copyright>
 	<PackageProjectUrl>https://github.com/rexTexTau/MethodExecuto</PackageProjectUrl>
 	<RepositoryType>Git</RepositoryType>
 	<RepositoryUrl>https://github.com/rexTexTau/MethodExecuto.git</RepositoryUrl>

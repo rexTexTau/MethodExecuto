@@ -30,7 +30,7 @@
     },
     "documentationRules": {
       "xmlHeader": false,
-      "companyName": "George Churochkin",
+      "companyName": "George Volsky",
       "documentInterfaces": true,
       "documentExposedElements": true,
       "documentInternalElements": false,

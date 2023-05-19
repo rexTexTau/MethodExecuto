@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2022 George Churochkin. All rights reserved.
+﻿// Copyright (c) 2022 George Volsky. All rights reserved.
 // Licensed under the MIT License (https://opensource.org/licenses/MIT)
 // Full license text: see LICENSE file in the root folder of this repository
 
