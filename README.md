@@ -19,7 +19,7 @@ MethodExecuto.exe -d "C:\Path\Where\Assembly\Is\" -a Assembly.Name -t SomeType -
 | Param (long)  | Param (short) | Meaning                                                 | If not specified                                 |
 | :---          |     :---:     | :---                                                    | :---                                             |
 | assembly      | a             | Assembly name or full path. You can omit .dll extension | Lists all available assemblies from working dir  |
-| directory     | d             | Working directory that is used to desolve dependencies  | MethodExecuto.exe location is used for that      |
+| directory     | d             | Working directory that is used to resolve dependencies  | MethodExecuto.exe location is used for that      |
 | type          | t             | Name of type to use method from.                        | List all types present in assembly (not autogen) |
 | method        | m             | Name of method to call.                                 | List all methods present in type (not autogen)   |
 | parameter     | p             | Parameters' values to pass to method. Order matters!    | Calls method with no parameters or using default |
